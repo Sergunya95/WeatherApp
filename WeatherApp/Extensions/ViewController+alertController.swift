@@ -9,20 +9,22 @@ import UIKit
 
 extension ViewController {
 
-    func presenSearchAlertController(withTitle titles: String?,
+    func presenSearchAlertController(withTitle title: String?,
                                      message: String?,
-                                     style: UIAlertController.Style) {
+                                     style: UIAlertController.Style,
+                                     completionHandler: @escaping (String) -> Void) {
         let ac = UIAlertController(title: title, message: message, preferredStyle: style)
         ac.addTextField { tf in
             let cities = ["Moscow", "London", "San Francisco", "Riga"]
             tf.placeholder = cities.randomElement()
         }
-        let search = UIAlertAction(title: "Search", style: .default) {
-            action in
+        let search = UIAlertAction(title: "Search", style: .default) { action in
             let textField = ac.textFields?.first
             guard let cityName = textField?.text else { return }
             if cityName != "" {
-                print("search info for the \(cityName)")
+                //self.networkWeathetManager.fetchCurrentWeather(forCity: cityName)
+                let city = cityName.split(separator: " ").joined(separator: "%20")
+                completionHandler(city)
             }
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
