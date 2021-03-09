@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var feelsLikeTemperatureLabel: UILabel!
+    @IBOutlet weak var humidity: UILabel!
+    @IBOutlet weak var windSpeed: UILabel!
     
     var networkWeathetManager = NetworkWeatherManager()
     lazy var locationManager: CLLocationManager = {
@@ -50,6 +52,8 @@ class ViewController: UIViewController {
             self.temperatureLabel.text = weather.temperatureString
             self.feelsLikeTemperatureLabel.text = weather.fellsLiketemperatureString
             self.weatherIconImageView.image = UIImage(systemName: weather.systemIconNameString)
+            self.humidity.text = weather.humidityString
+            self.windSpeed.text = weather.windSpeedString
         }
         
     }

@@ -20,6 +20,11 @@ struct CurrentWeather {
         return String(format: "%.0f", fellsLiketemperature)
     }
     
+    let humidity: Double
+    var humidityString: String {
+        return String(format: "%.1f", humidity)
+    }
+    
     let conditionCode: Int
     var systemIconNameString: String {
         switch conditionCode {
@@ -35,6 +40,10 @@ struct CurrentWeather {
         }
     }
     
+    let windSpeed: Double
+    var windSpeedString: String {
+        return String(format: "%.1f", windSpeed)
+    }
     
     
     init?(currentWeatherData: CurrentWeatherData) {
@@ -42,7 +51,8 @@ struct CurrentWeather {
         temperature = currentWeatherData.main.temp
         fellsLiketemperature = currentWeatherData.main.feelsLike
         conditionCode = currentWeatherData.weather.first!.id 
-        
+        humidity = currentWeatherData.main.humidity
+        windSpeed = currentWeatherData.wind.speed
     }
     
 }
