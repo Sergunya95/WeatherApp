@@ -16,6 +16,8 @@
 		1841CABA25F6647C00A4A2E1 /* ViewController+alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841CAB925F6647C00A4A2E1 /* ViewController+alertController.swift */; };
 		18E8CEA025F6B7E300222996 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8CE9F25F6B7E300222996 /* NetworkWeatherManager.swift */; };
 		18E8CEA325F6B9CB00222996 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8CEA225F6B9CB00222996 /* Constants.swift */; };
+		18E8CEA725F7B2E000222996 /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8CEA625F7B2E000222996 /* CurrentWeatherData.swift */; };
+		18E8CEAA25F7B93A00222996 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8CEA925F7B93A00222996 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1841CAB925F6647C00A4A2E1 /* ViewController+alertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift"; sourceTree = "<group>"; };
 		18E8CE9F25F6B7E300222996 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		18E8CEA225F6B9CB00222996 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18E8CEA625F7B2E000222996 /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
+		18E8CEA925F7B93A00222996 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				18E8CE9F25F6B7E300222996 /* NetworkWeatherManager.swift */,
+				18E8CEA625F7B2E000222996 /* CurrentWeatherData.swift */,
+				18E8CEA925F7B93A00222996 /* CurrentWeather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,9 +194,11 @@
 			files = (
 				1841CAA025F65AD000A4A2E1 /* ViewController.swift in Sources */,
 				1841CABA25F6647C00A4A2E1 /* ViewController+alertController.swift in Sources */,
+				18E8CEAA25F7B93A00222996 /* CurrentWeather.swift in Sources */,
 				18E8CEA025F6B7E300222996 /* NetworkWeatherManager.swift in Sources */,
 				1841CA9C25F65AD000A4A2E1 /* AppDelegate.swift in Sources */,
 				1841CA9E25F65AD000A4A2E1 /* SceneDelegate.swift in Sources */,
+				18E8CEA725F7B2E000222996 /* CurrentWeatherData.swift in Sources */,
 				18E8CEA325F6B9CB00222996 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
